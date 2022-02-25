@@ -1,0 +1,492 @@
+@font-face{
+    font-family: "Editorial New Ultralight";
+    src: url(../fonts/Editorial\ New\ Ultralight\ 200.otf);
+}
+@font-face{
+    font-family: "Neue Haas Bold";
+    src: url(../fonts/NHaasGroteskTXPro-75Bd.ttf);
+}
+@font-face{
+    font-family: "Neue Haas Medium";
+    src: url(../fonts/NHaasGroteskTXPro-65Md.ttf);
+}
+@font-face{
+    font-family: "Neue Haas Regular";
+    src: url(../fonts/NHaasGroteskTXPro-55Rg.ttf);
+}
+*{box-sizing: border-box;}
+body{
+    background-color: #f4f4f4;
+    border: 64px solid #000;
+    overflow-x: hidden;
+    z-index: -2;
+    cursor: url(../images/cursorempty.svg), auto;
+}
+main{
+    padding-left: 64px;
+    padding-right: 64px;
+    z-index: 2;
+    position: relative;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    font-family: "Neue Haas Regular";
+    font-size: 2.2vw;
+    line-height: 2.4vw;
+    width: 40%;
+    
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 8px 8px 8px;
+    border-bottom: 2px solid black;
+}
+.logo{
+    align-self: flex-start;
+    text-align: left;
+    font-family: "Neue Haas Medium";
+    font-size: 2.1vw;
+    line-height: 2.4vw;
+    background-color: #fee930;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.navitems{
+    padding-left: 4px;
+    padding-right: 4px;
+    transition: all 0.15s ease-in;
+}
+.nav a{
+    cursor: url(../images/cursorfull.svg), auto;
+}
+a{
+    color: #000000;
+    text-decoration: none;
+    line-height: auto;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    /* text-align: right; */
+    width: 60%;
+    order: 1;
+    /* padding-bottom: 54px; */
+}
+
+.name h3 {
+    line-height: 9vw;
+}
+
+.light{
+    font-family: "Editorial New Ultralight";
+    font-size: 12vw;
+}
+.bold{
+    font-family: "Neue Haas Bold";
+    font-size: 13vw;
+}
+
+.blank-name, .blank-work{
+    width: 40%;
+}
+.martasanto{
+    display: flex;
+    margin-top: 80px;
+}
+h2{
+    font-family: "Neue Haas Regular";
+    font-size: 40px;
+    text-align: left;
+    padding: 8px 0px 0px 0px;
+}
+h1{
+    font-family: "Editorial New Ultralight";
+    font-size: 40px;
+    text-align: left;
+    padding: 8px 0px 16px 0px;
+}
+p{
+    font-family: "Neue Haas Regular";
+    text-transform: uppercase;
+    line-height: 115%;
+    font-size: 20px;
+    text-align: left;
+    padding: 0px 0px 16px 0px;
+}
+.position{
+    width: 50%;
+}
+.blank-position{
+    width: 50%;
+}
+.presentation{
+    display: flex;
+    margin-top: 136px;
+}
+.work{
+    width: 60%;
+}
+.work h3 {
+        line-height: 9vw; 
+}
+h4{
+    font-family: "Editorial New Ultralight";
+    font-size: 40px;
+    text-align: left;
+}
+.oneproject{
+    padding: 16px 0;
+    width: 32%;
+    max-width: 380vw;
+}
+.oneproject img{
+    width: 100%;
+    z-index: 10;
+}
+.nameproject{
+    opacity: 0;
+    transition: all 0.2s;
+}
+.oneproject a{
+    cursor: url(../images/cursorfull.svg), auto;
+}
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 80px;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 65%;
+    order: 1;
+}
+.contact h3 {
+    line-height: 9vw;
+}
+.blank-contact{
+    width: 35%;
+}
+.mywork, .contactme{
+    display: flex;
+    margin-top: 80px;
+}
+.mail{
+    font-family: "Editorial New Ultralight";
+    font-size: 6vw;
+    line-height: 104px;
+    text-align: left;
+}
+.mailtitle{
+    font-family: "Neue Haas Medium";
+    font-size: 30px;
+    background-color: #fee930;
+    width: fit-content;
+    padding-top: 4px;
+    margin-top: 72px;
+}
+
+.linksfooter{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+.textfooter{
+    font-family: "Neue Haas Regular";
+    font-size: 24px;
+    color: #f4f4f4;
+}
+.link{
+    color: #f4f4f4;
+    font-family: "Editorial New Ultralight";
+    font-size: 40px;
+    line-height: 51px;
+    cursor: url(../images/cursorfullwhite.svg), auto;
+}
+footer{
+    background-color:#000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom: 88px;
+    padding: 24px 16px 0px 16px;
+    margin-top: 80px;
+    cursor: url(../images/cursorfullwhite.svg), auto;
+}
+
+/* imagenes del fondo */
+
+.imgback1{
+    position: absolute;
+    top: 320px;
+    left: 50px;
+    animation: slide-in-left 30s linear infinite both;
+}
+.imgback2{
+    position: absolute;
+    top: 550px;
+    left: 1205px;
+    animation: slide-in-left 30s linear infinite both;
+}
+.imgback3{
+    position: absolute;
+    top: 820px;
+    left: -250px;
+    animation: slide-in-left 30s linear infinite both;
+}
+.imgback4{
+    position: absolute;
+    top: 1200px;
+    left: 1000px;
+    animation: slide-in-left 30s linear infinite both;
+}
+.imgback5{
+    position: absolute;
+    top: 2350px;
+    left: 805px;
+    animation: slide-in-left 30s linear infinite both;
+}
+.imgback6{
+    position: absolute;
+    top: 1700px;
+    left: -400px;
+    animation: slide-in-left 30s linear infinite both;
+}
+.cv{
+    display: flex;
+    justify-content: flex-end ;
+}
+#cv{
+    padding: 32px 32px 32px 0px;
+}
+
+
+/* Transitions */
+
+.navitems:hover{
+    background-color: #fee930;
+}
+.oneproject:hover .nameproject {
+    opacity: 1;
+}
+.mail:hover{
+    text-decoration: underline 3px;
+}
+.link:hover{
+    text-decoration: underline white 2px;
+}
+.backtotop:hover {
+    transform: scale(1.1);
+}
+#cv:hover{
+    animation: jello-horizontal 0.9s both
+}
+
+/**
+ * ----------------------------------------
+ * animation slide-in-left
+ * ----------------------------------------
+ */
+ @-webkit-keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-500px);
+              transform: translateX(-500px);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateX(1400px);
+              transform: translateX(1400px);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-500px);
+              transform: translateX(-500px);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateX(1400px);
+              transform: translateX(1400px);
+      opacity: 1;
+    }
+  }
+  /* ----------------------------------------------
+ * Generated by Animista on 2022-2-24 16:33:48
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation jello-horizontal
+ * ----------------------------------------
+ */
+@-webkit-keyframes jello-horizontal {
+    0% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+    30% {
+      -webkit-transform: scale3d(1.25, 0.75, 1);
+              transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+      -webkit-transform: scale3d(0.75, 1.25, 1);
+              transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+      -webkit-transform: scale3d(1.15, 0.85, 1);
+              transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+      -webkit-transform: scale3d(0.95, 1.05, 1);
+              transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+      -webkit-transform: scale3d(1.05, 0.95, 1);
+              transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+  }
+  @keyframes jello-horizontal {
+    0% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+    30% {
+      -webkit-transform: scale3d(1.25, 0.75, 1);
+              transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+      -webkit-transform: scale3d(0.75, 1.25, 1);
+              transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+      -webkit-transform: scale3d(1.15, 0.85, 1);
+              transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+      -webkit-transform: scale3d(0.95, 1.05, 1);
+              transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+      -webkit-transform: scale3d(1.05, 0.95, 1);
+              transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+  }
+  @media only screen and (max-width:1059px) and (min-width:769) {
+    .projects{
+    gap: 4px;
+    }
+    
+  }
+  @media only screen and (max-width:768px){
+    body{
+        border: 3vw solid black ;
+    }
+    main{
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    .logo{
+        font-size: 3vw;
+        line-height: 3vw;
+        padding-left: 4px;
+        padding-right: 4px;
+        margin: 1vw 0 2vw 0;
+    }
+    .nav{
+        font-size: 3vw;
+        line-height: 3.2vw;
+        width: 60%;
+    }
+    .martasanto{
+        display: flex;
+        margin-top: 12vw;
+    }
+    h2{
+        font-size: 6vw;
+    }
+    h1{
+        font-size: 6vw;
+    }
+    p{
+        font-size: 3vw;
+    }
+    .presentation{
+        margin-top: 17vw;
+    }
+    .mywork, .contactme{
+        margin-top: 9vw;
+    }
+    h4{
+        font-size: 5vw;
+    }
+    #projectmb{
+        text-align: right;
+    }
+    .oneproject{
+        width: 100%;
+        max-width: none;
+    }
+    .nameproject{
+        opacity: 1;
+    }
+    .projects{
+        margin-top: 6vw;
+        justify-content: none;
+        
+    }
+    .mailtitle{
+        font-size: 3.8vw;
+        margin-top: 9vw;
+    }
+    .mail{
+        line-height: 13vw;
+    }
+    #cv{
+        padding: none;
+        height: 33vw;    
+    }
+    .textfooter{
+        font-size: 2vw;
+    }
+    .link{
+        font-size: 5vw;
+        line-height: 6.4vw;
+    }
+    .backtotop{
+        width: 20vw;
+    }
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 3vw;
+        padding-bottom: 11vw;
+        padding: 3vw 2vw 0 2vw;
+        margin: -4vw -1vw -1vw -1vw;
+    }
+  }
+  
